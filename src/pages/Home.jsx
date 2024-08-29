@@ -1,6 +1,8 @@
 import { Header } from "../components/Header/Header"
 import { Card } from "../components/Card/Card"
 import { cardArray } from "../constants"
+import { Sidebar } from "../components/Sidebar/Sidebar"
+import { Footer } from "../components/Footer/Footer"
 
 export const Home = () => {
     return (
@@ -40,45 +42,14 @@ export const Home = () => {
                                     }
                                 </div>
                             </div>
+
                             <div className="content-side">
                                 <h3 className="content-side__title">Сервисы и услуги</h3>
 
                                 <div className="content-side__box">
-                                    <div className="content-side__list">
-                                        <div className="content-side__list-item">
-                                            <img className="content-side__list-item--img" src="/images/side-info-1.svg"
-                                                alt="side-info" />
-                                            <h5 className="content-side__list-item--title">Доставка</h5>
-                                            <p className="content-side__list-item--text">Проверка при получении и возможность
-                                                бесплатно вернуть товар</p>
-                                        </div>
-                                        <div className="content-side__list-item">
-                                            <img className="content-side__list-item--img" src="/images/side-info-2.svg"
-                                                alt="side-info" />
-                                            <h5 className="content-side__list-item--title">Автотека</h5>
-                                            <p className="content-side__list-item--text">Отчёт с историей авто: пробег, владельцы,
-                                                сведения о залоге, ДТП и ремонтах</p>
-                                        </div>
-                                        <div className="content-side__list-item">
-                                            <img className="content-side__list-item--img" src="/images/side-info-3.svg"
-                                                alt="side-info" />
-                                            <h5 className="content-side__list-item--title">Онлайн-бронирование жилья</h5>
-                                            <p className="content-side__list-item--text">Посуточная аренда квартир и домов: большой
-                                                выбор вариантов для поездок по России</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="content__side-footer">
-                                        <p className="content__side-footer--item">
-                                            © ООО «Абито», 2011–2021
-                                        </p>
-                                        <a href="#!" className="content__side-footer--item">
-                                            Политика конфиденциальности
-                                        </a>
-                                        <a href="#!" className="content__side-footer--item">
-                                            Обработка данных
-                                        </a>
-                                    </div>
+                                    <Sidebar />
+                                    
+                                    <Footer />
 
                                 </div>
                             </div>
