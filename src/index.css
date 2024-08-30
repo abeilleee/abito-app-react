@@ -152,6 +152,12 @@ body {
   line-height: 16px;
 }
 
+.image-error{
+  width: 500px;
+  height: 300px;
+}
+
+
 @media (max-width: 1200px) {
   .container {
     max-width: 930px;

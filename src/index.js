@@ -4,11 +4,13 @@ import './index.css';
 import { Home } from './pages/Home';
 import { Product } from './pages/Product';
 import { Layout } from './layouts/Layout';
+import { NoMatch } from './pages/NoMatch';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 
 const router = createBrowserRouter([
@@ -22,7 +24,11 @@ const router = createBrowserRouter([
     {
       path: "/product/:id",
       element: <Product />,
-    },]
+    },
+    {
+      path: "*",
+    element: <NoMatch />}
+  ]
   }, 
 ]);
 
